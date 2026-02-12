@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>22 Things I Love About You</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0b0b0b;
+  color: #f5f5f5;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+/* Floating Background Glow */
+body::before {
+  content: "";
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(193,18,31,0.15) 0%, transparent 70%);
+  top: -200px;
+  left: -200px;
+  animation: floatGlow 12s infinite alternate ease-in-out;
+  z-index: -1;
+}
+
+@keyframes floatGlow {
+  0% { transform: translate(0,0); }
+  100% { transform: translate(200px,150px); }
+}
+
+/* HEADER */
+header {
+  padding: 120px 20px 80px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+header p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px 100px;
+}
+
+/* ITEMS */
+.item {
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease;
+}
+
+.item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.number {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #c1121f;
+  margin-bottom: 8px;
+}
+
+.text {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* ENDING */
+.ending {
+  text-align: center;
+  padding: 100px 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  opacity: 0;
+  animation: fadeIn 3s ease forwards;
+  animation-delay: 1s;
+}
+
+.ending p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.forever {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-top: 30px;
+  animation: pulse 3s infinite ease-in-out;
+}
+
+/* BUTTON */
+.back-btn {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 10px 25px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #802020;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #ffffff;
+  color: #0b0b0b;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>22 Things I Love About You</h1>
+  <p>
+    There are a million reasons I love you.  
+    But here are 22 that I can put into words.
+  </p>
+</header>
+
+<div class="container">
+
+  <div class="item"><div class="number">01</div><div class="text">I love the way you stay calm when I overthink everything.</div></div>
+  <div class="item"><div class="number">02</div><div class="text">I love how you listen — even to my longest, most random stories.</div></div>
+  <div class="item"><div class="number">03</div><div class="text">I love the way you care about the smallest things.</div></div>
+  <div class="item"><div class="number">04</div><div class="text">I love how you try to understand me instead of judging me.</div></div>
+  <div class="item"><div class="number">05</div><div class="text">I love your patience with my mood swings.</div></div>
+  <div class="item"><div class="number">06</div><div class="text">I love how safe I feel when I’m with you.</div></div>
+  <div class="item"><div class="number">07</div><div class="text">I love that you’re strong, but still soft with me.</div></div>
+  <div class="item"><div class="number">08</div><div class="text">I love your laugh — especially when it’s genuine and loud.</div></div>
+  <div class="item"><div class="number">09</div><div class="text">I love how you motivate me without pressuring me.</div></div>
+  <div class="item"><div class="number">10</div><div class="text">I love the way you remember little details about me.</div></div>
+  <div class="item"><div class="number">11</div><div class="text">I love how you protect what we have.</div></div>
+  <div class="item"><div class="number">12</div><div class="text">I love your ambition and how you work hard for your future.</div></div>
+  <div class="item"><div class="number">13</div><div class="text">I love how you make ordinary days feel special.</div></div>
+  <div class="item"><div class="number">14</div><div class="text">I love how you handle problems instead of running away.</div></div>
+  <div class="item"><div class="number">15</div><div class="text">I love the way you look at me when you think I don’t notice.</div></div>
+  <div class="item"><div class="number">16</div><div class="text">I love how you accept my flaws and stay anyway.</div></div>
+  <div class="item"><div class="number">17</div><div class="text">I love your random jokes, even the bad ones.</div></div>
+  <div class="item"><div class="number">18</div><div class="text">I love how you try to fix things when we argue.</div></div>
+  <div class="item"><div class="number">19</div><div class="text">I love that you choose me — not just once, but every day.</div></div>
+  <div class="item"><div class="number">20</div><div class="text">I love how you make me feel wanted and important.</div></div>
+  <div class="item"><div class="number">21</div><div class="text">I love the growth I see in you.</div></div>
+  <div class="item"><div class="number">22</div><div class="text">And most of all, I love who I am when I’m with you — because you make me feel safe enough to be my real self.</div></div>
+
+</div>
+
+<div class="ending">
+  <p>
+    And if I had to choose again,  
+    in every lifetime,  
+    I would still choose you.
+  </p>
+
+  <div class="forever">Forever, Yours.</div>
+
+  <a href="intro.html" class="back-btn">Back</a>
+</div>
+
+<script>
+const items = document.querySelectorAll('.item');
+
+function reveal() {
+  const trigger = window.innerHeight * 0.85;
+  items.forEach(item => {
+    const top = item.getBoundingClientRect().top;
+    if (top < trigger) {
+      item.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll', reveal);
+reveal();
+</script>
+
+</body>
+</html>
